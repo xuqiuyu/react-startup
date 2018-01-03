@@ -2,6 +2,7 @@ import React from 'react';
 import App from './pages/App';
 import TestComp from './pages/test';
 import TestComp1 from './pages/test.1';
+import TestComp2 from './pages/test2';
 
 const Home2 = () => (
   <div>
@@ -27,6 +28,10 @@ const routes = [
         path: '/abc',
         exact: true,
         component: Home2
+      }, {
+        path: '/test2',
+        exact: true,
+        component: TestComp2
       }
     ]
   }

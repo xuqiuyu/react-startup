@@ -36,10 +36,17 @@ module.exports = {
     rules: [{
       test: /\.js$/,
       exclude: /node_modules\/(?!za-piedom)/,
-      loader: 'babel-loader'
+      loader: 'babel-loader',
+      query: {
+        presets: ['es2015', 'react', 'stage-0', 'react-hmre'],
+        plugins: ['transform-runtime', 'add-module-exports', ['import', { libraryName: 'antd', style: true }]]
+      }
     }, {
       test: /\.html$/,
       loader: 'html-loader'
     }]
+  },
+  resolve: {
+    extensions: ['.js', '.json', '.scss', '.less']
   }
 };

@@ -48,6 +48,9 @@ module.exports = merge(baseConfig, {
             }
           }
         ]
+      }, {
+        test: /\.less$/,
+        loader: 'style-loader!css-loader!less-loader'
       }
     ]
   }

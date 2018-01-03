@@ -1,0 +1,12 @@
+.tableLayout {
+  padding-bottom: 24px;
+
+  table {
+    font-size: 14px;
+    padding-right: 30px;
+    margin-top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
